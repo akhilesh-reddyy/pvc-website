@@ -109,7 +109,7 @@ const structureData = [
   { label: "Hybridisation",          value: "sp³",         note: "tetrahedral ~109.5°" },
   { label: "Degree of Polymer.",     value: "500–1,500",   note: "n in –[CH₂CHCl]ₙ–" },
   { label: "Molecular Weight",       value: "30–100 k",    note: "g/mol" },
-  { label: "Crystallinity (atactic)","value": "~5%",       note: "largely amorphous" },
+  { label: "Crystallinity (atactic)", value: "~5%",        note: "largely amorphous" },
   { label: "Glass Transition Tg",    value: "~80°C",       note: "much higher than PE (−130°C)" },
   { label: "C–Cl Bond Energy",       value: "339 kJ/mol",  note: "enables flame retardancy" },
 ];

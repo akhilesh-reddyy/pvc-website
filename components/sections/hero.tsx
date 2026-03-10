@@ -1,6 +1,5 @@
 "use client";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
-import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -42,19 +41,25 @@ export default function HeroSection() {
           </div>
         }
       >
-        <div className="relative w-full h-full rounded-xl overflow-hidden">
-          <Image
+        {/* ── Card: plain <img> avoids next/image domain config issues on all hosts ── */}
+        <div className="relative w-full h-full rounded-xl overflow-hidden bg-neutral-900">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b"
             alt="Industrial PVC pipes and piping system"
-            fill
-            className="object-cover object-center"
+            className="w-full h-full object-cover object-center"
             draggable={false}
-            priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
+
+          {/* gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
+
+          {/* formula badge */}
           <div className="absolute top-4 left-4 font-mono text-xs text-white/60 bg-black/40 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-white/10">
             –[CH₂–CHCl]<sub>n</sub>– · MW monomer = 62.5 g/mol
           </div>
+
+          {/* stat strip */}
           <div className="absolute bottom-0 left-0 right-0 px-6 py-5 flex gap-8 flex-wrap border-t border-white/10 bg-black/30 backdrop-blur-sm">
             {[
               { v: "1835",   l: "First Synthesised" },
