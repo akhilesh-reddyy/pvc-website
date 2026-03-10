@@ -44,7 +44,7 @@ export default function HeroSection() {
       >
         <div className="relative w-full h-full rounded-xl overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?w=1600&q=80"
+            src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b"
             alt="Industrial PVC pipes and piping system"
             fill
             className="object-cover object-center"
