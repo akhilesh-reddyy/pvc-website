@@ -2,9 +2,9 @@
 import { motion } from "framer-motion";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import { cn } from "@/lib/utils";
-import { Zap, Shield, Recycle, DollarSign, Thermometer, FlaskConical } from "lucide-react";
+import { Zap, Shield, Recycle, DollarSign, Thermometer } from "lucide-react";
 
-const properties = [
+const properties: Array<{area: string; icon: React.ReactNode; title: string; description: string}> = [
   {
     area: "md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]",
     icon: <Shield className="h-4 w-4" />,

@@ -119,7 +119,7 @@ export default function PolymerizationScroll() {
     offset: ["start end", "end center"],
   });
 
-  useMotionValueEvent(scrollYProgress, "change", (v) => setProgress(v));
+  useMotionValueEvent(scrollYProgress, "change", (v: number) => setProgress(v));
 
   const productOpacity = Math.max(0, (progress - 0.78) / 0.15);
   const statusText = progress < 0.35
